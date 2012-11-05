@@ -1,0 +1,34 @@
+
+#Enable direct edit by default
+directEditDefault: true
+
+#Item for wirecless activation. Default 280(Stick)
+itemForSelection: 280
+
+#Display message property('you selected a sign'):
+#  -1: never display
+#  0: diplay only for non command sign (first line in drak blue)
+#  1:always display
+DisplayMsg: 0
+
+#When you vopy a sign a create a sign just afer it paste on it. 
+#If false this is going to work only for the first sign you create
+#If true its always going to do this(Can be very ennoying)
+keepSignCopy: false
+autoLineCut: false
+
+#Color scheme for command signs
+cmdSign:
+    line1: ''
+    line2: ''
+    line3: ''
+    line4: ''
+
+cmdLinks:
+    day: 'time day'
+    night: 'time night'
+    dawn: 'time dawn'
+    
+webLinks:
+  google: http://google.com
+  signutils: http://dev.bukkit.org/server-mods/sign-utilities/

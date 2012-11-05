@@ -1,0 +1,112 @@
+name: SignUtilities
+main: com.timcolonel.SignUtilities.SignUtilities
+version: 1.13.0
+author: timcolonel
+description: >
+             Allow to edit colors, text of the sign and execute any commands and a lot more...
+softdepend: [Vault]
+commands:       
+    setColor:
+        description: Allow to color signs line by line
+        usage: /<command> [color] [line]
+        permissions: 'signutils.setcolor'
+    setText:
+        description: Allow to replace sign text line by line
+        usage: /<command> [line] <text>
+        permissions: 'signutils.settext'
+    scopy:
+        description: Allow to copy sign text line by line
+        usage: /<command> [lines]
+        permissions: 'signutils.copy'
+    spaste:
+        description: Allow to copy sign text line by line
+        usage: /<command> [line]
+        permissions: 'signutils.paste'
+    snews:
+        description: Edit your news
+        usage: /<command> <add/del> <name> <text>
+        permissions: 'signutils.news'
+    snewsP:
+        description: Edit the news of any newspaper
+        usage: /<command> <add/del> <NewsPaper> <name> <text>
+        permissions: 'signutils.newsP'
+    directEdit:
+        description: Enable the direct sign editing mode
+        usage: /<command>
+        permissions: 'signutils.directedit'
+    de:
+        description: Enable the direct sign editing mode
+        usage: /<command>
+        permissions: 'signutils.directedit'
+    swa:
+        description: Wireless sign activation
+        usage: /<command> <acti/sign>
+        permissions: 'signutils.wireless'
+    
+permissions:
+    #################################################################
+    #                        CHAT COMMANDS                          #
+    #################################################################
+    signutils.setcolor:
+        description: Gives access to setColor command
+    signutils.settext:
+        description: Gives access to setColor command
+    signutils.copy:
+        description: Gives access to scopy command
+    signutils.paste:
+        description: Gives access to spaste command
+    signutils.directedit:   
+        description: Gives access to directEdit command
+    signutils.wireless:   
+        description: Gives acces to the wireless sign activation command
+        
+    #################################################################
+    #                           NEWS                                #
+    #################################################################
+    signutils.news.cmd:
+        description: Gives access to news commands
+    signutils.news.sign.create:
+        description: Allow the player to create a news sign
+    signutils.news.sign.use:
+        description: Allow the player to use the news sign
+    signutils.news_other.cmd:
+        description: Gives access to newsP command
+   
+        
+    #################################################################
+    #                       COMMAND SIGNS                           #
+    #################################################################
+    signutils.cmd.create:
+        description: Gives acces to the creation of classic cmd signs
+    signutils.cmd.use:
+        description: Gives acces to the use of classic cmd signs
+    signutils.cmd.custom.create:
+        description: Gives acces to the creation of custom cmd signs
+    signutils.cmd.custom.use:
+        description: Gives acces to the use of custom cmd signs
+        
+    #################################################################
+    #                       WEBLINK SIGNS                           #
+    #################################################################
+    signutils.web.create:
+        description: Gives acces to the creation of classic cmd signs
+    signutils.web.use:
+        description: Gives acces to the use of classic cmd signs
+        
+    #################################################################
+    #                       ACTIVATOR SIGNS                         #
+    #################################################################
+    signutils.activator.create:
+        description: Gives acces to the creation of activator signs    
+    signutils.activator.use:
+        description: Gives acces to the use of activator signs
+        
+    #################################################################
+    #                       MINECART SIGNS                          #
+    #################################################################
+    signutils.minecart.create:
+        description: Gives acces to the creation of minecart signs    
+    signutils.minecart.use:
+        description: Gives acces to the use of minecart signs
+        
+   
